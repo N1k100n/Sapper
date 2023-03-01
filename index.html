@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="Back_Light"></p>
+    <div id="Sapper">
+        <nav>
+            <div id="Counter">
+                <div id="Counter_1"></div>
+                <div id="Counter_2"></div>
+                <div id="Counter_3"></div>
+            </div>
+            <button id="Smiley">
+    
+            </button>
+            <div id="Stopwatch">
+                <div id="Stopwatch_1"></div>
+                <div id="Stopwatch_2"></div>
+                <div id="Stopwatch_3"></div>
+            </div>
+        </nav>
+        <div id="Field"></div>
+        <div id="Tiles"></div>
+    </div>
+    <script src="scripts/start.js"></script>
+    <script src="scripts/smiley.js"></script>
+    <script src="scripts/stopwatch.js"></script>
+    <script src="scripts/field.js"></script>
+    <script src="scripts/counter.js"></script>
+    <script src="scripts/loss.js"></script>
+    <script src="scripts/win.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var audio = new Audio();
+            audio.src = 'src/start.mp3';
+            audio.autoplay = true;
+        }
+    </script>
+</body>
+</html>

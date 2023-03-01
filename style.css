@@ -1,0 +1,122 @@
+body{
+    position: absolute;
+    inset: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #303030;
+    overflow: hidden;
+}
+body *{
+    position: absolute;
+    border: none;
+    outline: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    transition: opacity 0.5s;
+}
+body > p{
+    height: 780px;
+    width: 670px;
+    border-radius: 100%;
+    scale: 1.0;
+    transition: scale 2.0s;
+}
+#Sapper{
+    height: 780px;
+    width: 670px;
+    background: #bdbdbd;
+}
+#Sapper > nav{
+    top: 15px;
+    left: 15px;
+    height: 80px;
+    width: 640px;
+    outline: 5px inset #ebebeb;
+}
+#Counter{
+    top: 10px;
+    bottom: 10px;
+    left: 15px;
+    width: 105px;
+    background: #000000;
+}
+#Counter > div{
+    display: table-cell;
+    position: relative;
+    width: 35px;
+    height: 60px;
+    background: #813939;
+    background-image: url(src/sprite.png);
+    background-position: 35px 223px;
+    background-size: 370px;
+}
+#Smiley{
+    top: 10px;
+    right: 290px;
+    bottom: 10px;
+    left: 290px;
+    background-image: url(src/sprite.png);
+    background-position: 325px -56px;
+    background-size: 325px;
+    cursor: pointer;
+}
+#Stopwatch{
+    top: 10px;
+    right: 15px;
+    bottom: 10px;
+    width: 105px;
+    background: #000000;
+}
+#Stopwatch > div{
+    display: table-cell;
+    position: relative;
+    width: 35px;
+    height: 60px;
+    background: #000000;
+    background-image: url(src/sprite.png);
+    background-position: 35px 223px;
+    background-size: 370px;
+    transition: background-position 0.5s;
+}
+#Field{
+    bottom: 15px;
+    left: 15px;
+    height: 640px;
+    width: 640px;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    gap:0px;
+    outline: 5px inset #ebebeb;
+}
+#Field > div{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-image: url(src/sprite.png);
+    background-position: -43px 82px;
+    background-size: 350px;
+    transition: scale 1.5s;
+}
+#Tiles{
+    bottom: 15px;
+    left: 15px;
+    height: 640px;
+    width: 640px;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    gap:0px;
+}
+#Tiles > button{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-image: url(src/sprite.png);
+    background-position: 0px 83px;
+    background-size: 350px;
+    cursor: pointer;
+    /* opacity: 0.9; */
+    opacity: 1.0;
+}
