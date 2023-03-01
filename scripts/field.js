@@ -18,14 +18,8 @@ Get("Tiles").addEventListener("contextmenu", function() {
 Get("Tiles").addEventListener("mouseup", function() {
     if(event.button == 2){
         contextmenuOnTiles();
-        var audio = new Audio();
-        audio.src = 'src/tick.mp3';
-        audio.autoplay = true;
         return;
     }
-    var audio = new Audio();
-    audio.src = 'src/click.mp3';
-    audio.autoplay = true;
     
     mouseupOnTiles();
 });
@@ -50,6 +44,10 @@ function mouseupOnTiles() {
                     break;
                 }
             }
+            var audio = new Audio();
+            audio.src = 'src/click.mp3';
+            audio.autoplay = true;
+
             loadMine(index);
             cellDiscovery(index);
             StartStopwatch();
@@ -65,10 +63,15 @@ function mouseupOnTiles() {
                     break;
                 }
             }
+            var audio = new Audio();
+            audio.src = 'src/click.mp3';
+            audio.autoplay = true;
+            
             loss(index);
             cellDiscovery(index);
             win();
         }
+
         numberOfClicks++;
     }
 }
@@ -86,6 +89,9 @@ function contextmenuOnTiles() {
         } else if (event.target.style.backgroundPosition == coords.question) {
             event.target.style.backgroundPosition = "";
         }
+        var audio = new Audio();
+        audio.src = 'src/tick.mp3';
+        audio.autoplay = true;
     }
 }
 
