@@ -133,5 +133,5 @@ body > p{
     border-radius: 100%;
     background: radial-gradient(circle, #3330, #5c5c5c75 50%, #ffffff2e 75%);
     backdrop-filter: blur(0.7px);
-    transition: scale 1.0s, opacity 1.0s;
+    transition: scale 1.0s, opacity 1.5s;
 }
