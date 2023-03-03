@@ -11,6 +11,7 @@ Get("Smiley").addEventListener("mouseup", function() {
     numberOfClicks = 0;
     Get("Field").innerHTML = "";
     Get("Tiles").innerHTML = "";
+    Get("Boom").innerHTML = "";
     loadField();
     counter = 40;
     Get("Counter_2").style.backgroundPosition = coordsDigitalNumber[4];

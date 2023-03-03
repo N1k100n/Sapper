@@ -36,7 +36,7 @@ var coordsDigitalNumber = [
 var coordsNumber = [
     "",
     "0px 40px",
-    "-42px 40px",
+    "-43px 40px",
     "-85px 40px",
     "-128px 40px",
     "-172px 40px",

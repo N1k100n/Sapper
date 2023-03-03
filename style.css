@@ -120,4 +120,18 @@ body > p{
     cursor: pointer;
     /* opacity: 0.9; */
     opacity: 1.0;
+    transition: scale 0.5s;
+}
+#Boom{
+    bottom: 15px;
+    left: 15px;
+    height: 640px;
+    width: 640px;
+    pointer-events: none;
+}
+#Boom > p{
+    border-radius: 100%;
+    background: radial-gradient(circle, #3330, #5c5c5c75 50%, #ffffff2e 75%);
+    backdrop-filter: blur(0.7px);
+    transition: scale 1.0s, opacity 1.0s;
 }
